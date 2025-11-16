@@ -187,7 +187,6 @@ def calculate_final_scores(score_dict: dict,
         score = avg_target - (config["antitarget_weight"] * avg_antitarget)
         final_scores.append(score)
 
-    # Store final scores in dataframe
     batch_scores = pd.DataFrame({
         "name": names,
         "smiles": smiles,
